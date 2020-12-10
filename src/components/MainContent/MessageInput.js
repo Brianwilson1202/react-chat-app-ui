@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import SettingsVoiceIcon from '@material-ui/icons/SettingsVoice';
-import SentimentSatisfiedOutlinedIcon from '@material-ui/icons/SentimentSatisfiedOutlined';
-import AttachFileOutlinedIcon from '@material-ui/icons/AttachFileOutlined';
-import IconButton from '@material-ui/core/IconButton';
-import SendIcon from '@material-ui/icons/Send';
+import SettingsVoiceIcon from "@material-ui/icons/SettingsVoice";
+import SentimentSatisfiedOutlinedIcon from "@material-ui/icons/SentimentSatisfiedOutlined";
+import AttachFileOutlinedIcon from "@material-ui/icons/AttachFileOutlined";
+import IconButton from "@material-ui/core/IconButton";
+import SendIcon from "@material-ui/icons/Send";
 
 const StyledContainer = styled.div`
   border-radius: 15px;
@@ -14,8 +14,8 @@ const StyledContainer = styled.div`
   padding: 0.7rem 1rem;
 
   input {
-    font-size: .9rem;
-    padding: .5rem 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
     border: none;
     width: 100%;
   }
@@ -43,15 +43,21 @@ const StyledContainer = styled.div`
 function MessageInput() {
   return (
     <StyledContainer>
-      <SettingsVoiceIcon style={{color: '#7e7ee7', fontSize: '1.7rem'}}/>
-      <input type='text' placeholder='Type something...' />
-      <SentimentSatisfiedOutlinedIcon style={{color: '#888', margin: 5}}/>
-      <AttachFileOutlinedIcon style={{transform: 'rotate(35deg)', color: '#888', margin: 5}} />
-      <IconButton className='send-btn' style={{backgroundImage: 'linear-gradient(145deg, #b59bf0, #6673e6)'}} aria-label="add an alarm">
-        <SendIcon className='send-icon'/>
+      <SettingsVoiceIcon style={{ color: "#7e7ee7", fontSize: "1.7rem" }} />
+      <input type="text" placeholder="Type something..." />
+      <SentimentSatisfiedOutlinedIcon style={{ color: "#888", margin: 5 }} />
+      <AttachFileOutlinedIcon
+        style={{ transform: "rotate(35deg)", color: "#888", margin: 5 }}
+      />
+      <IconButton
+        className="send-btn"
+        style={{ backgroundImage: "linear-gradient(145deg, #b59bf0, #6673e6)" }}
+        aria-label="add an alarm"
+      >
+        <SendIcon className="send-icon" />
       </IconButton>
     </StyledContainer>
-  )
+  );
 }
 
-export default MessageInput
+export default MessageInput;

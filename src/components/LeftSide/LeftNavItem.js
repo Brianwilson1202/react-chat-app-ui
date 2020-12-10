@@ -31,7 +31,7 @@ function LeftNavItem(props) {
   return (
     <StyledContainer
       onClick={handleClick}
-      className={leftNavItem.active === true ? "active": ""}
+      className={leftNavItem.active === true ? "active" : ""}
     >
       <div className="left-nav-item-icon">{leftNavItem.icon}</div>
       <Typography className="left-nav-item-title">

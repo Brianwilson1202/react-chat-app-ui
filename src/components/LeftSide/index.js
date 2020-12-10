@@ -1,6 +1,6 @@
-import React from 'react';
-import LeftNavItemList from './LeftNavItemList';
-import ProfileInfo from './ProfileInfo';
+import React from "react";
+import LeftNavItemList from "./LeftNavItemList";
+import ProfileInfo from "./ProfileInfo";
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
@@ -20,14 +20,13 @@ const StyledContainer = styled.div`
   }
 `;
 
-
 function LeftSide() {
   return (
     <StyledContainer>
-      <ProfileInfo/>
-      <LeftNavItemList/>
+      <ProfileInfo />
+      <LeftNavItemList />
     </StyledContainer>
-  )
+  );
 }
 
-export default LeftSide
+export default LeftSide;

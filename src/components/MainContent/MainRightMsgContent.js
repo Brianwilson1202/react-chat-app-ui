@@ -1,6 +1,6 @@
-import React from 'react';
-import MessageContainer from './MessageContainer';
-import MessageInput from './MessageInput';
+import React from "react";
+import MessageContainer from "./MessageContainer";
+import MessageInput from "./MessageInput";
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
@@ -20,10 +20,10 @@ const StyledContainer = styled.div`
 function MainRightMsgContent() {
   return (
     <StyledContainer>
-      <MessageContainer/>
-      <MessageInput/>
+      <MessageContainer />
+      <MessageInput />
     </StyledContainer>
-  )
+  );
 }
 
-export default MainRightMsgContent
+export default MainRightMsgContent;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import { Typography } from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
-import MainLeftPersonInfoList from './MainLeftPersonInfoList';
+import { Typography } from "@material-ui/core";
+import SearchIcon from "@material-ui/icons/Search";
+import MainLeftPersonInfoList from "./MainLeftPersonInfoList";
 
 const StyledContainer = styled.div`
   width: 40%;
@@ -44,17 +44,14 @@ const StyledSearch = styled.div`
 function MainLeft() {
   return (
     <StyledContainer>
-      <Typography className='chat-title' >
-        Chat
-      </Typography>
+      <Typography className="chat-title">Chat</Typography>
       <StyledSearch>
-        <input placeholder='Search' />
-        <SearchIcon/>
+        <input placeholder="Search" />
+        <SearchIcon />
       </StyledSearch>
-      <MainLeftPersonInfoList/>
-      
+      <MainLeftPersonInfoList />
     </StyledContainer>
-  )
+  );
 }
 
-export default MainLeft
+export default MainLeft;

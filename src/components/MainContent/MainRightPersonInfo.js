@@ -36,7 +36,7 @@ const StyledContainer = styled.div`
   .main-left-msg-info {
     position: absolute;
     right: 0px;
-    top: .5rem;
+    top: 0.5rem;
     padding-right: 1rem;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,6 @@ const StyledContainer = styled.div`
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
-
 `;
 
 function MainRightPersonInfo() {

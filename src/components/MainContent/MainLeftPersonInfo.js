@@ -42,7 +42,7 @@ const StyledContainer = styled.div`
   .main-left-msg-info {
     position: absolute;
     right: 0px;
-    top: .5rem;
+    top: 0.5rem;
     padding-right: 1rem;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ const StyledContainer = styled.div`
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
-  
+
   @media (max-width: 768px) {
     .person-msg {
       // width: 65%;
@@ -73,16 +73,14 @@ const StyledContainer = styled.div`
 `;
 
 function MainLeftPersonInfo(props) {
-  const {person} = props;
+  const { person } = props;
 
   return (
     <StyledContainer>
       <img alt="person" src={person.info.image} />
       <div className="main-left-person-info">
         <Typography className="person-name">{person.info.name}</Typography>
-        <Typography className="person-msg">
-          {person.message.content}
-        </Typography>
+        <Typography className="person-msg">{person.message.content}</Typography>
       </div>
       <div className="main-left-msg-info">
         <Typography className="msg-date">{person.message.date}</Typography>
